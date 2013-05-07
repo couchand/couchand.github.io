@@ -1,0 +1,18 @@
+#info{:itemscope => true, :itemtype => "http://schema.org/Person"}
+    %header
+        .name{:itemprop => "name"}
+            Andrew Couch
+        .tagline{:itemprop => "jobTitle"}
+            Kick-ass full-stack Developer &amp; Designer
+        .address{:itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress"}
+            %span{:itemprop => "addressLocality"}
+                New York
+            %span{:itemprop => "addressRegion"}
+                New York
+            %span{:itemprop => "addressCountry"}
+                United States
+        .email{:itemprop => "email"}
+            couchand@gmail.com
+        .github{:itemprop => "url"}
+            %a{:href => "http://github.com/couchand"}
+                http://github.com/couchand
