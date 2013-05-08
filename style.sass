@@ -7,6 +7,15 @@ body
 #cv
     max-width: 900px
     margin: 35px auto
+    @media (max-width: 1160px)
+        width: 93%
+
+    @media (max-width: 940px)
+        margin: 35px 30px
+
+    @media (max-width: 600px)
+        width: 87%
+
     font:
         family: sans-serif
         size: 16px
@@ -29,11 +38,21 @@ section
     margin: 0 0 52px 0
 
 header .info
-    max-width: 58%
+    max-width: 69%
     float: left
+    @media (max-width: 800px)
+        max-width: 60%
+    @media (max-width: 600px)
+        max-width: 310px
+        float: none
+        clear: both
 
 header .avatar
     float: right
+    @media (max-width: 600px)
+        margin: 20px 0 20px 20px
+        float: none
+        clear: both
 
 .info
     &> div
