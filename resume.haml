@@ -27,3 +27,47 @@
         .avatar
           %img{:src => "http://www.gravatar.com/avatar/e013232c8e8539be34c51834c974fec1?s=200",
                :itemprop => "image"}
+      %section#experience{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
+        .position{:itemprop => "itemListElement"}
+          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+            .title{:itemprop => "jobTitle"}
+              Technical Consultant
+            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+              %span{:itemprop => "name"}
+                Beyond
+            .company{:itemprop => "name"}
+              Bluewolf Group
+            .period
+              %time{:datetime => "2011-05"}
+                May 2011
+              to present
+        .position{:itemprop => "itemListElement"}
+          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+            .title{:itemprop => "jobTitle"}
+              PHP Developer and Architect
+            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+              %span{:itemprop => "name"}
+                Department of Biology
+            .company{:itemprop => "name"}
+              University of Iowa
+            .period
+              %time{:datetime => "2010-08"}
+                August 2010
+              to
+              %time{:datetime => "2011-05"}
+                May 2011
+        .position{:itemprop => "itemListElement"}
+          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+            .title{:itemprop => "jobTitle"}
+              Visual C++ Developer
+            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+              %span{:itemprop => "name"}
+                Neural Control of Movement Laboratory
+            .company{:itemprop => "name"}
+              University of Iowa
+            .period
+              %time{:datetime => "2008-12"}
+                December 2012
+              to
+              %time{:datetime => "2010-06"}
+                June 2010
