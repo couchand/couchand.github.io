@@ -2,6 +2,7 @@ body
     margin: 0
     padding: 0
     background-color: #eee
+    font-size: 16px
     color: #322
 
 #cv
@@ -11,6 +12,7 @@ body
         width: 93%
 
     @media (max-width: 940px)
+        width: auto
         margin: 35px 30px
 
     @media (max-width: 600px)
@@ -18,7 +20,10 @@ body
 
     font:
         family: sans-serif
-        size: 16px
+        size: 100%
+
+    @media (max-width: 600px)
+        font-size: 90%
 
 a
     &:link
@@ -36,6 +41,7 @@ header, section
 
 section
     margin: 0 0 52px 0
+    padding: 25px 0 0
 
 header .info
     max-width: 69%
@@ -50,9 +56,10 @@ header .info
 header .avatar
     float: right
     @media (max-width: 600px)
-        margin: 20px 0 20px 20px
-        float: none
+        margin: 20px 0 10px
         clear: both
+    @media (max-width: 390px)
+        margin: 20px 0 10px
 
 .info
     &> div
@@ -60,9 +67,9 @@ header .avatar
 
     .name
         color: #544
-        font-size: 30px
+        font-size: 200%
     .tagline
-        font-size: 22px
+        font-size: 150%
     .address span
         color: #433
         &:before
@@ -86,25 +93,25 @@ header .avatar
 .position
     .summary
         .title
-            font-size: 20px
+            font-size: 140%
             margin: 0 0 4px
         .period
             color: #433
             margin: 0 0 7px
             time
-                font-size: 18px
+                font-size: 120%
         .department
             color: #544
-            font-size: 16px
+            font-size: 120%
         .company
             color: #433
-            font-size: 22px
+            font-size: 150%
 
 .blog
     .summary
         .title
             color: #433
-            font-size: 18px
+            font-size: 140%
 
     .description
         margin: 0 0 0 3%
