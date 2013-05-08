@@ -1,30 +1,31 @@
 %html
   %head
     %title
-      Andrew Couch &mdash; Kick-ass full-stack Developer &amp; Designer
+      Andrew Couch &mdash; One kick ass full-stack Developer &amp; Designer
     %meta{:name => "author", :content => "Andrew Couch"}
     %link{:rel => "stylesheet", :href => "resume.css"}
   %body
-    #info{:itemscope => true, :itemtype => "http://schema.org/Person"}
+    #cv{:itemscope => true, :itemtype => "http://schema.org/Person"}
       %header
-        .name{:itemprop => "name"}
-          Andrew Couch
-        .tagline{:itemprop => "jobTitle"}
-          Kick-ass full-stack Developer &amp; Designer
-        .address{:itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress"}
-          %span{:itemprop => "addressLocality"}
-            New York
-          %span{:itemprop => "addressRegion"}
-            New York
-          %span{:itemprop => "addressCountry"}
-            United States
-        .email{:itemprop => "email"}
-          %a{:href => "mailto:couchand@gmail.com"}
-            couchand@gmail.com
-        .github{:itemprop => "url"}
-          %a{:href => "http://github.com/couchand",
-             :rel => "me"}
-            http://github.com/couchand
+        .info
+          .name{:itemprop => "name"}
+            Andrew Couch
+          .tagline{:itemprop => "jobTitle"}
+            One kick ass full-stack Developer &amp; Designer
+          .address{:itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress"}
+            %span{:itemprop => "addressLocality"}
+              New York
+            %span{:itemprop => "addressRegion"}
+              New York
+            %span{:itemprop => "addressCountry"}
+              United States
+          .email{:itemprop => "email"}
+            %a{:href => "mailto:couchand@gmail.com"}
+              couchand@gmail.com
+          .github{:itemprop => "url"}
+            %a{:href => "http://github.com/couchand",
+               :rel => "me"}
+              http://github.com/couchand
         .avatar
           %img{:src => "http://www.gravatar.com/avatar/e013232c8e8539be34c51834c974fec1?s=200",
                :itemprop => "image"}
