@@ -32,20 +32,19 @@ header .info
 header .avatar
     float: right
 
-.info > div
-    margin: 2px 0 4px
+.info
+    &> div
+        margin: 2px 0 4px
 
-.name
-    font-size: 30px
-
-.tagline
-    font-size: 22px
-
-.address span
-    &:before
-        content: "|"
-    &:first-child:before
-        content: none
+    .name
+        font-size: 30px
+    .tagline
+        font-size: 22px
+    .address span
+        &:before
+            content: "|"
+        &:first-child:before
+            content: none
 
 .position
     margin: 0 0 15px
