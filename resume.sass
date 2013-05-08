@@ -1,4 +1,6 @@
 body
+    margin: 0
+    padding: 0
     background-color: #eee
     color: #322
 
@@ -6,6 +8,7 @@ body
     margin: 15px auto
     font:
         family: sans-serif
+        size: 16px
 
 a
     &:link
@@ -17,3 +20,21 @@ img
     padding: 3px
     border: thin solid #ccc
         radius: 8px
+
+header > div
+    margin: 2px 12px 4px
+
+header .avatar
+    float: right
+
+.name
+    font-size: 30px
+
+.tagline
+    font-size: 22px
+
+.address span
+    &:before
+        content: "|"
+    &:first-child:before
+        content: none
