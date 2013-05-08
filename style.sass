@@ -70,11 +70,12 @@ header .avatar
         &:first-child:before
             content: none
 
-.position
+.position, .blog
     margin: 0 0 25px
 
     .summary
         width: 42%
+        display: inline-block
         text-align: right
 
         @media (max-width: 850px)
@@ -82,6 +83,8 @@ header .avatar
         @media (max-width: 390px)
             width: 100%
 
+.position
+    .summary
         .title
             font-size: 20px
             margin: 0 0 4px
@@ -98,18 +101,7 @@ header .avatar
             font-size: 22px
 
 .blog
-    margin: 0 0 25px
-
     .summary
-        width: 42%
-        display: inline-block
-        text-align: right
-
-        @media (max-width: 850px)
-            width: 330px
-        @media (max-width: 390px)
-            width: 100%
-
         .title
             color: #433
             font-size: 18px
