@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+  color: #332222; }
+
+#cv {
+  max-width: 900px;
+  margin: 35px auto;
+  font-family: sans-serif;
+  font-size: 16px; }
+
+a:link {
+  color: #1133aa; }
+a:visited {
+  color: #aa3311; }
+
+img {
+  padding: 3px;
+  border: thin solid #cccccc;
+    border-radius: 8px; }
+
+header, section {
+  clear: both; }
+
+section {
+  margin: 0 0 52px 0; }
+
+header .info {
+  max-width: 58%;
+  float: left; }
+
+header .avatar {
+  float: right; }
+
+.info > div {
+  margin: 2px 0 4px; }
+.info .name {
+  color: #554444;
+  font-size: 30px; }
+.info .tagline {
+  font-size: 22px; }
+.info .address span {
+  color: #443333; }
+  .info .address span:before {
+    content: "|"; }
+  .info .address span:first-child:before {
+    content: none; }
+
+.position {
+  margin: 0 0 25px; }
+  .position .summary {
+    width: 42%;
+    text-align: right; }
+    .position .summary .title {
+      font-size: 20px;
+      margin: 0 0 7px; }
+    .position .summary .department {
+      color: #554444;
+      font-size: 16px; }
+    .position .summary .company {
+      color: #443333;
+      font-size: 22px;
+      margin: 0 0 4px; }
+    .position .summary .period {
+      color: #443333; }
+      .position .summary .period time {
+        font-size: 18px; }
+
+.blog {
+  margin: 0 0 25px; }
+  .blog .summary {
+    width: 42%;
+    display: inline-block;
+    text-align: right; }
+    .blog .summary .title {
+      color: #443333;
+      font-size: 18px; }
+  .blog .description {
+    margin: 0 0 0 3%;
+    max-width: 54%;
+    display: inline-block; }
