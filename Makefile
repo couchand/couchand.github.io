@@ -1,8 +1,8 @@
 default: resume
-resume: resume.html resume.css
+resume: index.html style.css
 
-resume.html: resume.haml
-	haml resume.haml -qf html5 > resume.html
+index.html: resume.haml
+	haml resume.haml -qf html5 > index.html
 
-resume.css: resume.sass
-	sass resume.sass resume.css
+style.css: resume.sass
+	sass resume.sass style.css
