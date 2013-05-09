@@ -90,6 +90,15 @@ header .avatar {
     @media (max-width: 390px) {
       .position .summary, .blog .summary {
         width: 100%; } }
+  .position .description, .blog .description {
+    margin: 0 0 0 3%;
+    max-width: 54%;
+    display: inline-block;
+    text-indent: 25px; }
+    @media (max-width: 850px) {
+      .position .description, .blog .description {
+        margin: 15px 0 0;
+        max-width: 100%; } }
 
 .position .summary .title {
   font-size: 140%;
@@ -109,12 +118,7 @@ header .avatar {
 .blog .summary .title {
   color: #443333;
   font-size: 140%; }
-.blog .description {
-  margin: 0 0 0 3%;
-  max-width: 54%;
-  display: inline-block; }
-  @media (max-width: 850px) {
-    .blog .description {
-      display: block;
-      margin: 15px 15%;
-      max-width: 100%; } }
+@media (max-width: 850px) {
+  .blog .summary {
+    display: block;
+    max-width: 100%; } }
