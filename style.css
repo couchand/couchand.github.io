@@ -5,6 +5,12 @@ body {
   font-size: 16px;
   color: #332222; }
 
+hr {
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #999999;
+  border-right: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb; }
+
 #cv {
   max-width: 900px;
   margin: 35px auto;
@@ -78,30 +84,31 @@ header .avatar {
   .info .address span:first-child:before {
     content: none; }
 
-.position, .blog {
+.position, .project, .blog {
   margin: 0 0 25px; }
-  .position .summary, .blog .summary {
+  .position .summary, .project .summary, .blog .summary {
     width: 42%;
     display: inline-block;
     text-align: right; }
+    .position .summary .title, .project .summary .title, .blog .summary .title {
+      font-size: 140%; }
     @media (max-width: 850px) {
-      .position .summary, .blog .summary {
+      .position .summary, .project .summary, .blog .summary {
         width: 330px; } }
     @media (max-width: 390px) {
-      .position .summary, .blog .summary {
+      .position .summary, .project .summary, .blog .summary {
         width: 100%; } }
-  .position .description, .blog .description {
+  .position .description, .project .description, .blog .description {
     margin: 0 0 0 3%;
     max-width: 54%;
     display: inline-block;
     text-indent: 25px; }
     @media (max-width: 850px) {
-      .position .description, .blog .description {
+      .position .description, .project .description, .blog .description {
         margin: 15px 0 0;
         max-width: 100%; } }
 
 .position .summary .title {
-  font-size: 140%;
   margin: 0 0 4px; }
 .position .summary .period {
   color: #443333;
@@ -115,9 +122,9 @@ header .avatar {
   color: #443333;
   font-size: 130%; }
 
-.blog .summary .title {
-  color: #443333;
-  font-size: 140%; }
+.project .summary .title, .blog .summary .title {
+  color: #443333; }
+
 @media (max-width: 850px) {
   .blog .summary {
     display: block;
