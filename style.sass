@@ -1,3 +1,20 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    max-width: var(--measure)
+
+@font-face
+    font-family: "Signika"
+    src: url("fonts/signika/Signika-Light.ttf") format("truetype")
+
+@font-face
+    font-family: "Lusitana"
+    src: url("fonts/lusitana/Lusitana-Regular.ttf") format("truetype")
+
+html, body, div, header, main, section, hr
+    max-width: none
+
 hr
     border:
         top: 1px solid #aaa
@@ -5,47 +22,58 @@ hr
         right: 1px solid #bbb
         left: 1px solid #bbb
 
-body
-    max-width: 900px
-    margin: 35px auto
-    padding: 0
-
-    background-color: #eee
-    font-size: 16px
-    color: #322
-
-    @media (max-width: 1160px)
-        width: 93%
-
-    @media (max-width: 940px)
-        width: auto
-        margin: 35px 30px
-
-    @media (max-width: 600px)
-        width: 87%
-
-    font:
-        family: sans-serif
-        size: 100%
-
-    @media (max-width: 600px)
-        font-size: 90%
-
 a
     &:link
         color: #13a
     &:visited
         color: #a31
 
+\:root
+    font-size: calc(1rem + 0.2vw - 1px)
+
+    --ratio: 1.4
+    --s-5: calc(var(--s-4) / var(--ratio))
+    --s-4: calc(var(--s-3) / var(--ratio))
+    --s-3: calc(var(--s-2) / var(--ratio))
+    --s-2: calc(var(--s-1) / var(--ratio))
+    --s-1: calc(var(--s0) / var(--ratio))
+    --s0: 1rem
+    --s1: calc(var(--s0) * var(--ratio))
+    --s2: calc(var(--s1) * var(--ratio))
+    --s3: calc(var(--s2) * var(--ratio))
+    --s4: calc(var(--s3) * var(--ratio))
+    --s5: calc(var(--s4) * var(--ratio))
+
+    --darkest: #322
+    --darker: #433
+    --dark: #544
+
+    --measure: 60ch
+
+body
+    line-height: var(--ratio)
+
+    background-color: #eee
+    color: var(--darkest)
+
+    margin: 0 auto
+    padding: var(--s2)
+
+    max-width: calc(var(--measure) * 1.8)
+
+    font:
+        family: "Signika", sans-serif
+
+.description
+    font:
+        family: "Lusitana", serif
+    max-width: var(--measure)
+
 h1
     font-weight: normal
-    margin: 0
-
-    &> div
-        margin: 2px 0 4px
 
 h2
-    font-size: 1.2rem
+    font-size: var(--s1)
     text-transform: lowercase
 
 #experience h2
@@ -56,102 +84,110 @@ h2
     height: 1px
     overflow: hidden
 
-img
-    padding: 3px
+header > *
+    display: flex
+    flex-wrap: wrap
+    margin: -0.5rem
+
+header > * > *
+    margin: 0.5rem
+
+header
+    .info
+        flex-basis: 20ch
+        flex-grow: 999
+        min-width: calc(66% - 1rem)
+
+    .avatar
+        flex-grow: 1
+        display: flex
+        justify-content: flex-end
+
+.avatar img
+    width: calc(12rem + 1vw)
+    height: calc(12rem + 1vw)
+    padding: var(--s-4)
     border: thin solid #ccc
-        radius: 8px
-
-header, section
-    clear: both
-
-section
-    margin: 0 0 52px 0
-    padding: 25px 0 0
-
-header .info
-    max-width: 69%
-    float: left
-    @media (max-width: 800px)
-        max-width: 60%
-    @media (max-width: 600px)
-        max-width: 310px
-        float: none
-        clear: both
-
-header .avatar
-    float: right
-    @media (max-width: 600px)
-        margin: 20px 0 10px
-        clear: both
-    @media (max-width: 390px)
-        margin: 20px 0 10px
+        radius: var(--s-1)
 
 .info
-    &> div
-        margin: 2px 0 4px
-
     .name
-        color: #544
-        font-size: 1.8rem
+        color: var(--dark)
+        font-size: var(--s2)
     .tagline
-        font-size: 1.3rem
+        font-size: var(--s1)
     .address span
-        font-size: 110%
-        color: #433
+        color: var(--darker)
         &:before
             content: "|"
         &:first-child:before
             content: none
 
+.info > * + *
+    margin-top: var(--s-2)
+
+.keydata > * + *
+    margin-top: var(--s-4)
+
+body > * + *
+    margin-top: var(--s1)
+
+main > * + *
+    margin-top: var(--s1)
+
+section > * + *
+    margin-top: var(--s1)
+
+.description > * + *
+    margin-top: var(--s1)
+
 .position, .project, .blog
-    margin: 0 0 25px
-
     .summary
-        width: 42%
-        display: inline-block
-        text-align: right
-
         .title
-            font-size: 140%
-
-        @media (max-width: 850px)
-            width: 330px
-        @media (max-width: 390px)
-            width: 100%
-
-    .description
-        margin: 0 0 0 3%
-        max-width: 54%
-        display: inline-block
-        text-indent: 25px
-
-        @media (max-width: 850px)
-            margin: 15px 0 0
-            max-width: 100%
+            font-size: var(--s1)
 
 .position
     .summary
-        .title
-            margin: 0 0 4px
         .period
-            color: #433
-            margin: 0 0 7px
+            color: var(--darker)
             time
-                font-size: 110%
+                font-size: var(--s1)
         .department
-            color: #544
-            font-size: 110%
+            color: var(--dark)
         .company
-            color: #433
-            font-size: 130%
+            color: var(--darker)
+            font-size: var(--s1)
 
 .project, .blog
     .summary
         .title
-            color: #433
+            color: var(--darker)
 
-.blog
-    .summary
-        @media (max-width: 850px)
-            display: block
-            max-width: 100%
+.item > *
+    display: flex
+    flex-wrap: wrap
+    margin: calc(-1 * var(--s-1))
+
+.item > * > *
+    margin: var(--s-1)
+
+.item .summary
+    flex-basis: 20rem
+    flex-grow: 1
+    max-width: calc(var(--measure) / var(--ratio))
+
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+.item .description
+    flex-basis: 45ch
+    flex-grow: 999
+
+    box-sizing: content-box
+    min-width: calc(50% - 1rem)
+
+    padding-top: var(--s-3)
+
+    p
+        text-indent: 5ch
