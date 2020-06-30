@@ -6,230 +6,229 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %link{:rel => "stylesheet", :href => "style.css"}
     %link{:rel => "shortcut icon", :href => "favicon.ico"}
-  %body
-    #cv{:itemscope => true, :itemtype => "http://schema.org/Person"}
-      %header
-        .info
-          .name{:itemprop => "name"}
-            Andrew Dona-Couch
-          .tagline{:itemprop => "jobTitle"}
-            not your average developer, designer&nbsp;&amp; architect
-          .address{:itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress"}
-            %span{:itemprop => "addressLocality"}
-              New York
-            %span{:itemprop => "addressRegion"}
-              New York
-            %span{:itemprop => "addressCountry"}
-              United States
-          .email{:itemprop => "email"}
-            %a{:href => "mailto:spam@andewcou.ch"}
-              &lt;your clever retort here&gt;@andrewcou.ch
-          .github{:itemprop => "url"}
-            %a{:href => "http://github.com/couchand",
-               :rel => "me"}
-              http://github.com/couchand
-        .avatar
-          %img{:src => "http://www.gravatar.com/avatar/e013232c8e8539be34c51834c974fec1?s=200",
-               :itemprop => "image"}
-      %section#experience{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              design director
-            .period
-              %time{:datetime => "2019-01"}
-                January 2019
-              to present
-            .company{:itemprop => "name"}
-              The Ristretto Group
-          .description
-            %p
-              The Ristretto Group builds products that delight, and assists creative technologists doing the same.
-            %p
-              Thoughtful design has always been one of my passions.  At The Ristretto Group, I am in charge of all product development, starting from the specification and design phase through planning and execution.
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              technical lead
-            .period
-              %time{:datetime => "2017-06"}
-                June 2017
-              to
-              %time{:datetime => "2019-01"}
-                January 2019
-            .company{:itemprop => "name"}
-              Cockroach Labs
-          .description
-            %p
-              Cockroach Labs is building a cloud-native, distributed by default, consistent SQL database in pursuit of the goal to Make Data Easy.  A rock solid database requires production-grade administrative and operational support.  As technical lead of data visualization and the admin UI project, I worked to ensure that the web interface is as reliable as the database it's built to monitor.
-            %p
-              My primary focus was designing and developing novel data visualizations and implementing the necessary data collection to support them.  I also worked to shore up automated testing, to enable the team to fearlessly develop the admin UI.
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              technical architect
-            .period
-              %time{:datetime => "2016-02"}
-                February 2016
-              to
-              %time{:datetime => "2017-06"}
-                June 2017
-            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
-              %span{:itemprop => "name"}
-                Lifion
-            .company{:itemprop => "name"}
-              ADP
-          .description
-            %p
-              Leading a cross-functional team of developers, I architected, developed, and delivered a metadata-driven UI engine built on React.  This standards-based and forward-looking dynamic front-end is an integral part of the Lifion human capital management platform, a bold initiative to rethink the way HR and payroll software is built.  With an agile mindset, our small team was able to take on a complete rewrite, producing a faster and more maintainable project in a fraction of the time taken by the original.
-            %p
-              To support the many varied use cases, I designed the UI engine with an emphasis on extensibility.  New widgets can be easily added to the system, and this engine formed the basis of React Native apps for Android and iOS.  I also led an initiative to ensure complete browser testing using SauceLabs.
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              integration developer
-            .period
-              %time{:datetime => "2013-10"}
-                October 2013
-              to
-              %time{:datetime => "2015-09"}
-                September 2015
-            .company{:itemprop => "name"}
-              Stack Exchange
-          .description
-            %p
-              As the first integration developer at Stack Exchange it was my job to fix any pebbles that got in the way of our team's ability to climb the proverbial mountain.  My primary role was sales support development, lubricating the integrations between several homegrown systems and the salesforce.com crm.  I worked with our executive team to determine project requirements and design solutions and with our development team to see them executed successfully.
-            %p
-              In my two years I led a variety of projects, including a trello-like board tracking deals as a better front-end for salesforce, an overhauled commissions accounting system, a sales dashboard showing our team up-to-the minute status information and realtime data replication from salesforce.
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              technical consultant
-            .period
-              %time{:datetime => "2011-05"}
-                May 2011
-              to
-              %time{:datetime => "2013-10"}
-                October 2013
-            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
-              %span{:itemprop => "name"}
-                Beyond
-            .company{:itemprop => "name"}
-              Bluewolf Group
-          .description
-            %p
-              While a technical consultant I translated customer requirements into well-tested and maintainable code.  The projects varied considerably &ndash; I'd be designing responsive and accessible user interfaces one day and complex yet bulletproof business logic the next.
-            %p
-              I led the implementation of a continuous integration server based on jenkins and the development of build plugins for grunt and ant, though I also spent time supporting our business analysts with utilities to ease the burdens of salesforce.com configuration.
-            %p
-              In mid 2012 I took on leadership of our developer book club from Will Saunders, and I played an active role mentoring junior developers of Beyond to ensure they have the skills they need to succeed.
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              php developer
-            .period
-              %time{:datetime => "2010-08"}
-                August 2010
-              to
-              %time{:datetime => "2011-05"}
-                May 2011
-            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
-              %span{:itemprop => "name"}
-                Department of Biology
-            .company{:itemprop => "name"}
-              University of Iowa
-          .description
-            %p
-              I designed and built a portal to enable bioinformatics students to run command-line utilities over the web.  The legacy system ran a tomcat server and jsp but the rest of the stack at IT Services is lamp, so I was brought in to rewrite it in php.
-            %p
-              I developed an active interface based on metadata for each of the cli tools.  The binary's location, parameter types and various modes of operation are all configurable for admins, as is the help text and associated tutorials.  Users are given a role based on single-sign on with their university login.
-            %p
-              We were able to introduce a number of valuable features in iterations after the initial release.  After speaking with the developer who took over for me, it seems the system has been flexible and resilient since.
-        .position{:itemprop => "itemListElement"}
-          .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
-            .title{:itemprop => "jobTitle"}
-              visual c++ developer
-            .period
-              %time{:datetime => "2008-12"}
-                December 2008
-              to
-              %time{:datetime => "2010-06"}
-                June 2010
-            .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
-              %span{:itemprop => "name"}
-                Neural Control of Movement Laboratory
-            .company{:itemprop => "name"}
-              University of Iowa
-          .description
-            %p
-              Researchers on Dr. Morton's team look at the mechanisms of the nervous system response to changes in environment, with a particular focus on adaptations to trauma and injury.  A significant portion of the quantitative data studied comes from a realtime motion tracking system.
-            %p
-              I developed programs supporting a variety of the lab's interactive motion tracking experiments.  Because the public api is rudimentary, I designed an object-oriented facade that the lab's researchers (who know some c++) could then use to construct novel experiments.
-      %section#projects{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
-        %hr
-        %h3<
-          selected projects
-        .project{:itemprop => "itemListElement"}
-          .summary
-            .title
-              fake-api-server
-            %a{:href => "https://github.com/couchand/fake-api-server"}
-              https://github.com/couchand/fake-api-server
-          .description
-            A quick, minimal-configuration mock API server.
-        .project{:itemprop => "itemListElement"}
-          .summary
-            .title
-              petard
-            %a{:href => "https://github.com/couchand/petard"}
-              https://github.com/couchand/petard
-          .description
-            Straightforward Node.js bindings to the most common LLVM code generation APIs.
-        .project{:itemprop => "itemListElement"}
-          .summary
-            .title
-              language-viz
-            %a{:href => "http://couchand.github.io/language-viz"}
-              http://couchand.github.io/language-viz
-          .description
-            Comparative language benchmark graphs built with D3.  Data from the Computer Language Benchmarks Game, visualization design by Guillaume Marceau.
-        .project{:itemprop => "itemListElement"}
-          .summary
-            .title
-              income-inequality
-            %a{:href => "http://couchand.github.io/income-inequality"}
-              http://couchand.github.io/income-inequality
-          .description
-            Interactive chart to explore the rise of income inequality since 1979, built with D3.
-        .project{:itemprop => "itemListElement"}
-          .summary
-            .title
-              jQuery UI
-            %a{:href => "http://www.jqueryui.com"}
-              http://www.jqueryui.com
-          .description
-            Contributor.
-      %section#publications{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
-        %hr
-        %h3<
-          written works
-        .blog{:itemprop => "itemListElement", :itemscope => true, :itemtype => "http://schema.org/Blog"}
-          .summary
-            .title{:itemprop => "name"}
-              compiled thoughts
-            %a{:href => "http://compiledthoughts.couchand.com",
-               :rel => "me",
-               :itemprop => "url"}
-              http://compiledthoughts.couchand.com
-          .description{:itemprop => "description"}
-            Dispatches from the software development underground.
-        .blog{:itemprop => "itemListElement", :itemscope => true, :itemtype => "http://schema.org/Blog"}
-          .summary
-            .title{:itemprop => "name"}
-              I'll have a beer
-            %a{:href => "http://haveabeer.couchand.com",
-                :rel => "me",
-                :itemprop => "url"}
-              http://haveabeer.couchand.com
-          .description{:itemprop => "description"}
-            Craft beer reviews and industry commentary.
+  %body{:itemscope => true, :itemtype => "http://schema.org/Person"}
+    %header
+      .info
+        .name{:itemprop => "name"}
+          Andrew Dona-Couch
+        .tagline{:itemprop => "jobTitle"}
+          not your average developer, designer&nbsp;&amp; architect
+        .address{:itemprop => "address", :itemscope => true, :itemtype => "http://schema.org/PostalAddress"}
+          %span{:itemprop => "addressLocality"}
+            New York
+          %span{:itemprop => "addressRegion"}
+            New York
+          %span{:itemprop => "addressCountry"}
+            United States
+        .email{:itemprop => "email"}
+          %a{:href => "mailto:spam@andewcou.ch"}
+            &lt;your clever retort here&gt;@andrewcou.ch
+        .github{:itemprop => "url"}
+          %a{:href => "http://github.com/couchand",
+             :rel => "me"}
+            http://github.com/couchand
+      .avatar
+        %img{:src => "http://www.gravatar.com/avatar/e013232c8e8539be34c51834c974fec1?s=200",
+             :itemprop => "image"}
+    %section#experience{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            design director
+          .period
+            %time{:datetime => "2019-01"}
+              January 2019
+            to present
+          .company{:itemprop => "name"}
+            The Ristretto Group
+        .description
+          %p
+            The Ristretto Group builds products that delight, and assists creative technologists doing the same.
+          %p
+            Thoughtful design has always been one of my passions.  At The Ristretto Group, I am in charge of all product development, starting from the specification and design phase through planning and execution.
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            technical lead
+          .period
+            %time{:datetime => "2017-06"}
+              June 2017
+            to
+            %time{:datetime => "2019-01"}
+              January 2019
+          .company{:itemprop => "name"}
+            Cockroach Labs
+        .description
+          %p
+            Cockroach Labs is building a cloud-native, distributed by default, consistent SQL database in pursuit of the goal to Make Data Easy.  A rock solid database requires production-grade administrative and operational support.  As technical lead of data visualization and the admin UI project, I worked to ensure that the web interface is as reliable as the database it's built to monitor.
+          %p
+            My primary focus was designing and developing novel data visualizations and implementing the necessary data collection to support them.  I also worked to shore up automated testing, to enable the team to fearlessly develop the admin UI.
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            technical architect
+          .period
+            %time{:datetime => "2016-02"}
+              February 2016
+            to
+            %time{:datetime => "2017-06"}
+              June 2017
+          .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+            %span{:itemprop => "name"}
+              Lifion
+          .company{:itemprop => "name"}
+            ADP
+        .description
+          %p
+            Leading a cross-functional team of developers, I architected, developed, and delivered a metadata-driven UI engine built on React.  This standards-based and forward-looking dynamic front-end is an integral part of the Lifion human capital management platform, a bold initiative to rethink the way HR and payroll software is built.  With an agile mindset, our small team was able to take on a complete rewrite, producing a faster and more maintainable project in a fraction of the time taken by the original.
+          %p
+            To support the many varied use cases, I designed the UI engine with an emphasis on extensibility.  New widgets can be easily added to the system, and this engine formed the basis of React Native apps for Android and iOS.  I also led an initiative to ensure complete browser testing using SauceLabs.
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            integration developer
+          .period
+            %time{:datetime => "2013-10"}
+              October 2013
+            to
+            %time{:datetime => "2015-09"}
+              September 2015
+          .company{:itemprop => "name"}
+            Stack Exchange
+        .description
+          %p
+            As the first integration developer at Stack Exchange it was my job to fix any pebbles that got in the way of our team's ability to climb the proverbial mountain.  My primary role was sales support development, lubricating the integrations between several homegrown systems and the salesforce.com crm.  I worked with our executive team to determine project requirements and design solutions and with our development team to see them executed successfully.
+          %p
+            In my two years I led a variety of projects, including a trello-like board tracking deals as a better front-end for salesforce, an overhauled commissions accounting system, a sales dashboard showing our team up-to-the minute status information and realtime data replication from salesforce.
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            technical consultant
+          .period
+            %time{:datetime => "2011-05"}
+              May 2011
+            to
+            %time{:datetime => "2013-10"}
+              October 2013
+          .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+            %span{:itemprop => "name"}
+              Beyond
+          .company{:itemprop => "name"}
+            Bluewolf Group
+        .description
+          %p
+            While a technical consultant I translated customer requirements into well-tested and maintainable code.  The projects varied considerably &ndash; I'd be designing responsive and accessible user interfaces one day and complex yet bulletproof business logic the next.
+          %p
+            I led the implementation of a continuous integration server based on jenkins and the development of build plugins for grunt and ant, though I also spent time supporting our business analysts with utilities to ease the burdens of salesforce.com configuration.
+          %p
+            In mid 2012 I took on leadership of our developer book club from Will Saunders, and I played an active role mentoring junior developers of Beyond to ensure they have the skills they need to succeed.
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            php developer
+          .period
+            %time{:datetime => "2010-08"}
+              August 2010
+            to
+            %time{:datetime => "2011-05"}
+              May 2011
+          .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+            %span{:itemprop => "name"}
+              Department of Biology
+          .company{:itemprop => "name"}
+            University of Iowa
+        .description
+          %p
+            I designed and built a portal to enable bioinformatics students to run command-line utilities over the web.  The legacy system ran a tomcat server and jsp but the rest of the stack at IT Services is lamp, so I was brought in to rewrite it in php.
+          %p
+            I developed an active interface based on metadata for each of the cli tools.  The binary's location, parameter types and various modes of operation are all configurable for admins, as is the help text and associated tutorials.  Users are given a role based on single-sign on with their university login.
+          %p
+            We were able to introduce a number of valuable features in iterations after the initial release.  After speaking with the developer who took over for me, it seems the system has been flexible and resilient since.
+      .position{:itemprop => "itemListElement"}
+        .summary{:itemscope => true, :itemtype => "http://schema.org/Organization"}
+          .title{:itemprop => "jobTitle"}
+            visual c++ developer
+          .period
+            %time{:datetime => "2008-12"}
+              December 2008
+            to
+            %time{:datetime => "2010-06"}
+              June 2010
+          .department{:itemprop => "member", :itemscope => true, :itemtype => "http://schema.org/Organization"}
+            %span{:itemprop => "name"}
+              Neural Control of Movement Laboratory
+          .company{:itemprop => "name"}
+            University of Iowa
+        .description
+          %p
+            Researchers on Dr. Morton's team look at the mechanisms of the nervous system response to changes in environment, with a particular focus on adaptations to trauma and injury.  A significant portion of the quantitative data studied comes from a realtime motion tracking system.
+          %p
+            I developed programs supporting a variety of the lab's interactive motion tracking experiments.  Because the public api is rudimentary, I designed an object-oriented facade that the lab's researchers (who know some c++) could then use to construct novel experiments.
+    %section#projects{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
+      %hr
+      %h3<
+        selected projects
+      .project{:itemprop => "itemListElement"}
+        .summary
+          .title
+            fake-api-server
+          %a{:href => "https://github.com/couchand/fake-api-server"}
+            https://github.com/couchand/fake-api-server
+        .description
+          A quick, minimal-configuration mock API server.
+      .project{:itemprop => "itemListElement"}
+        .summary
+          .title
+            petard
+          %a{:href => "https://github.com/couchand/petard"}
+            https://github.com/couchand/petard
+        .description
+          Straightforward Node.js bindings to the most common LLVM code generation APIs.
+      .project{:itemprop => "itemListElement"}
+        .summary
+          .title
+            language-viz
+          %a{:href => "http://couchand.github.io/language-viz"}
+            http://couchand.github.io/language-viz
+        .description
+          Comparative language benchmark graphs built with D3.  Data from the Computer Language Benchmarks Game, visualization design by Guillaume Marceau.
+      .project{:itemprop => "itemListElement"}
+        .summary
+          .title
+            income-inequality
+          %a{:href => "http://couchand.github.io/income-inequality"}
+            http://couchand.github.io/income-inequality
+        .description
+          Interactive chart to explore the rise of income inequality since 1979, built with D3.
+      .project{:itemprop => "itemListElement"}
+        .summary
+          .title
+            jQuery UI
+          %a{:href => "http://www.jqueryui.com"}
+            http://www.jqueryui.com
+        .description
+          Contributor.
+    %section#publications{:itemscope => true, :itemtype => "http://schema.org/ItemList"}
+      %hr
+      %h3<
+        written works
+      .blog{:itemprop => "itemListElement", :itemscope => true, :itemtype => "http://schema.org/Blog"}
+        .summary
+          .title{:itemprop => "name"}
+            compiled thoughts
+          %a{:href => "http://compiledthoughts.couchand.com",
+             :rel => "me",
+             :itemprop => "url"}
+            http://compiledthoughts.couchand.com
+        .description{:itemprop => "description"}
+          Dispatches from the software development underground.
+      .blog{:itemprop => "itemListElement", :itemscope => true, :itemtype => "http://schema.org/Blog"}
+        .summary
+          .title{:itemprop => "name"}
+            I'll have a beer
+          %a{:href => "http://haveabeer.couchand.com",
+              :rel => "me",
+              :itemprop => "url"}
+            http://haveabeer.couchand.com
+        .description{:itemprop => "description"}
+          Craft beer reviews and industry commentary.
