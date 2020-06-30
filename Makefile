@@ -5,4 +5,4 @@ index.html: cv.haml
 	haml cv.haml -qf html5 > index.html
 
 style.css: style.sass
-	sass style.sass style.css
+	sass --sourcemap=none style.sass style.css
