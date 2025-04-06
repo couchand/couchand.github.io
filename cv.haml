@@ -1,7 +1,7 @@
 %html
   %head
     %title
-      Andrew Dona-Couch &mdash; Not your average developer, designer &amp; architect
+      Andrew Dona-Couch &mdash; Not your average technical leader
     %meta(content = "text/html;charset=utf-8" http-equiv = "Content-Type")
     %meta{:name => "author", :content => "Andrew Dona-Couch"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
@@ -15,7 +15,7 @@
             .name{:itemprop => "name"}
               Andrew Dona-Couch
             .tagline{:itemprop => "jobTitle"}
-              not your average developer, designer&nbsp;&amp; architect
+              not your average technical leader
           .keydata
             .address{:itemprop => "address", :itemscope => true, :itemtype => "https://schema.org/PostalAddress"}
               %span{:itemprop => "addressLocality"}
@@ -43,7 +43,7 @@
           .position{:itemprop => "itemListElement"}
             .summary{:itemscope => true, :itemtype => "https://schema.org/Organization"}
               .title{:itemprop => "jobTitle"}
-                design director
+                chief architect &amp; design lead
               .period
                 %time{:datetime => "2019-01"}
                   January 2019
@@ -52,9 +52,11 @@
                 The Ristretto Group
             .description
               %p
-                The Ristretto Group builds products that delight, and assists creative technologists doing the same.
+                I started The Ristretto Group to build products that delight, and assist creative technologists doing the same.  Thoughtful design has always been one of my passions.  At The Ristretto Group, I am in charge of all product development, starting from the specification and design phase through planning and execution.
               %p
-                Thoughtful design has always been one of my passions.  At The Ristretto Group, I am in charge of all product development, starting from the specification and design phase through planning and execution.
+                Working with Kiva Sales &amp; Service, I lead the team that built and operated their first B2B sales platform.  A bespoke framework of Rust-based web services provided realtime integration with their legacy back office ERP software, while providing a user-friendly and modern web experience for their customers.  Under my technical leadership, the B2B sales channel grew to be responsible for a third of KSS's revenue.
+              %p
+                In addition, I have served as lead architect on numerous enterprise systems integrations, large-scale data migrations, and organizational transformations.  My satisfied clients include national nonprofits, prominent media organizations, and financial services companies.
         .item
           .position{:itemprop => "itemListElement"}
             .summary{:itemscope => true, :itemtype => "https://schema.org/Organization"}
@@ -187,29 +189,29 @@
           .project{:itemprop => "itemListElement"}
             .summary
               .title
-                fake-api-server
-              %a{:href => "https://github.com/couchand/fake-api-server"}
-                https://github.com/couchand/fake-api-server
+                aykroyd
+              %a{:href => "https://crates.io/crates/aykroyd"}
+                https://crates.io/crates/aykroyd
             .description
-              A quick, minimal-configuration mock API server.
+              Zero-overhead ergonomic data access for Rust.  Aykroyd is a micro-ORM focused on developer ergonomics, with an uncompromising commitment to performance.
         .item
           .project{:itemprop => "itemListElement"}
             .summary
               .title
-                petard
-              %a{:href => "https://github.com/couchand/petard"}
-                https://github.com/couchand/petard
+                unflappable
+              %a{:href => "https://crates.io/crates/unflappable"}
+                https://crates.io/crates/unflappable
             .description
-              Straightforward Node.js bindings to the most common LLVM code generation APIs.
+              A batteries-included embedded-hal InputPin debouncer.
         .item
           .project{:itemprop => "itemListElement"}
             .summary
               .title
-                language-viz
-              %a{:href => "https://couchand.github.io/language-viz"}
-                https://couchand.github.io/language-viz
+                lifted
+              %a{:href => "https://git.sr.ht/~couch/lifted"}
+                https://git.sr.ht/~couch/lifted
             .description
-              Comparative language benchmark graphs built with D3.  Data from the Computer Language Benchmarks Game, visualization design by Guillaume Marceau.
+              Higher-kinded types for Rust.
         .item
           .project{:itemprop => "itemListElement"}
             .summary
@@ -236,21 +238,10 @@
           .blog{:itemprop => "itemListElement", :itemscope => true, :itemtype => "https://schema.org/Blog"}
             .summary
               .title{:itemprop => "name"}
-                compiled thoughts
-              %a{:href => "https://compiledthoughts.couchand.com",
+                compiled thoughts (defunct)
+              %a{:href => "https://web.archive.org/web/20240224080942/http://compiledthoughts.couchand.com/",
                  :rel => "me",
                  :itemprop => "url"}
-                https://compiledthoughts.couchand.com
+                https://web.archive.org/web/20240224080942/http://compiledthoughts.couchand.com/
             .description{:itemprop => "description"}
               Dispatches from the software development underground.
-        .item
-          .blog{:itemprop => "itemListElement", :itemscope => true, :itemtype => "https://schema.org/Blog"}
-            .summary
-              .title{:itemprop => "name"}
-                I'll have a beer
-              %a{:href => "https://haveabeer.couchand.com",
-                  :rel => "me",
-                  :itemprop => "url"}
-                https://haveabeer.couchand.com
-            .description{:itemprop => "description"}
-              Craft beer reviews and industry commentary.
